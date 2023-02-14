@@ -183,6 +183,17 @@ createApp({
       this.contacts[this.activeChat].messages.push(message);
 
       this.newMessage = "";
+
+      // Sends an answer after 1s
+      const messageReceiver = {
+        date: "10/01/2020 15:51:00",
+        text: "Ok!",
+        status: "received",
+      };
+
+      setTimeout(() => {
+        this.contacts[this.activeChat].messages.push(messageReceiver);
+      }, 1000);
     },
   },
 }).mount("#app");
