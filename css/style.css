@@ -1,7 +1,7 @@
 /* Generics */
 
 body {
-  background-color: #d8dbd4;
+  background-image: linear-gradient(#009688 20%, #d8dbd5 20%);
 }
 
 img {
@@ -94,6 +94,38 @@ main {
   border: none;
   outline: none;
   font-size: 0.8rem;
+}
+
+/* Chat list */
+
+.chat_list {
+  overflow-y: auto;
+  height: 75%; /* to fix */
+}
+
+.chat_list .chat {
+  border-top: 1px solid #e7e7e7;
+}
+
+.chat_icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f2fbff;
+  border-radius: 50px;
+}
+
+.chat_icon img {
+  border-radius: inherit;
+}
+
+.chat_info .last_message {
+  font-size: 0.8rem;
+  color: #c4c6cd;
+}
+
+.chat_message_date {
+  color: #c4c4c4;
+  font-size: 0.7rem;
 }
 
 /* Right main side */
