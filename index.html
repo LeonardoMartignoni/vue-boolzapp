@@ -76,7 +76,7 @@
 
 					<!-- CHAT LIST -->
 					<div class="chat_list">
-						<div class="chat chat_active d-flex align-items-center px-3 py-2">
+						<div class="chat d-flex align-items-center px-3 py-2" v-for="contact in contacts">
 
 							<!-- CHAT ICON -->
 							<div class="chat_icon d-flex justify-content-center align-items-center flex-shrink-0">
@@ -85,7 +85,7 @@
 
 							<!-- CHAT INFOS -->
 							<div class="chat_info ms-2">
-								<span class="d-block">Michele</span>
+								<span class="d-block">{{contact.name}}</span>
 								<span class="d-block last_message">Ultimo messaggio inviato</span>
 							</div>
 
@@ -95,25 +95,25 @@
 							</div>
 
 						</div>
-						<div class="chat d-flex align-items-center px-3 py-2">
+						<!-- <div class="chat d-flex align-items-center px-3 py-2">
 
-							<!-- CHAT ICON -->
+							CHAT ICON
 							<div class="chat_icon d-flex justify-content-center align-items-center flex-shrink-0">
 								<img src="./img/avatar_1.jpg">
 							</div>
 
-							<!-- CHAT INFOS -->
+							CHAT INFOS
 							<div class="chat_info ms-2">
 								<span class="d-block">Michele</span>
 								<span class="d-block last_message">Ultimo messaggio inviato</span>
 							</div>
 
-							<!-- CHAT LAST MESSAGE DATE -->
+							CHAT LAST MESSAGE DATE
 							<div class="chat_message_date ms-auto mb-auto">
 								<span class="chat_message_date_text">12:00</span>
 							</div>
 
-						</div>
+						</div> -->
 					</div>
 
 				</div>
