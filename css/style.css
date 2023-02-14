@@ -15,10 +15,6 @@ img {
   object-fit: cover;
 }
 
-.dbg {
-  border: 2px dashed black;
-}
-
 /* Main */
 
 .main_app {
@@ -145,6 +141,10 @@ main {
 #profile_last_access {
   color: #a1a1a1;
   font-size: 0.8rem;
+}
+
+.profile.profile_chat {
+  border-left: 2px solid #dddddd;
 }
 
 /* Text Chat */
