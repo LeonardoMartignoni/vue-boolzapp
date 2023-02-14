@@ -100,7 +100,6 @@ main {
 
 .chat_list {
   overflow-y: auto;
-  height: 75%; /* to fix */
 }
 
 .chat_list .chat {
