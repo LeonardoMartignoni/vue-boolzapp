@@ -78,6 +78,24 @@ main {
   cursor: pointer;
 }
 
+/* Search chats */
+
+.search_chats {
+  background-color: #fafafa;
+}
+
+.search_chats_content {
+  color: #b4b7b9;
+  background-color: white;
+}
+
+.search_chats_input {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+
 /* Right main side */
 
 .right_main {
