@@ -171,6 +171,10 @@ main {
   background-color: white;
 }
 
+.message_text {
+  word-wrap: break-word;
+}
+
 .message_date {
   color: #a1a1a1;
   font-size: 0.6rem;

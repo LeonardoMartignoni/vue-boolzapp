@@ -168,6 +168,21 @@ createApp({
       ],
 
       activeChat: 0,
+      newMessage: "",
     };
+  },
+
+  methods: {
+    sendMessage() {
+      const message = {
+        date: "10/01/2020 15:51:00",
+        text: this.newMessage,
+        status: "sent",
+      };
+
+      this.contacts[this.activeChat].messages.push(message);
+
+      this.newMessage = "";
+    },
   },
 }).mount("#app");
