@@ -87,7 +87,8 @@
 							<!-- CHAT INFOS -->
 							<div class="chat_info ms-2">
 								<span class="d-block">{{contact.name}}</span>
-								<span class="d-block last_message">Ultimo messaggio inviato</span>
+								<span class="d-block last_message">{{contacts[index].messages[contacts[index].messages.length -
+									1].text}}</span>
 							</div>
 
 							<!-- CHAT LAST MESSAGE DATE -->

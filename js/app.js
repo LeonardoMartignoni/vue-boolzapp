@@ -169,6 +169,7 @@ createApp({
 
       activeChat: 0,
       newMessage: "",
+      searchChat: "",
     };
   },
 
