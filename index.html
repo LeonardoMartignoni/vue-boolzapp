@@ -76,7 +76,8 @@
 
 					<!-- CHAT LIST -->
 					<div class="chat_list">
-						<div class="chat d-flex align-items-center px-3 py-2" v-for="contact in contacts">
+						<div class="chat d-flex align-items-center px-3 py-2" v-for="(contact, index) in contacts"
+							:class="index == activeChat ? 'chat_active' : ''" @click="activeChat = index">
 
 							<!-- CHAT ICON -->
 							<div class="chat_icon d-flex justify-content-center align-items-center flex-shrink-0">
@@ -126,11 +127,11 @@
 
 						<!-- PROFILE CHAT ICON + NAME -->
 						<div class="profile_img d-flex">
-							<img src="./img/avatar_1.jpg">
+							<img :src="'./img/avatar' + contacts[activeChat].avatar + '.jpg'">
 
 							<!-- PROFILE CHAT INFO -->
 							<div class="profile_infos d-flex flex-column justify-content-center">
-								<span id="profile_name_chat" class="ms-2">Michele</span>
+								<span id="profile_name_chat" class="ms-2">{{contacts[activeChat].name}}</span>
 								<span id="profile_last_access" class="ms-2 d-block">Ultimo accesso oggi alle 12:00</span>
 							</div>
 						</div>

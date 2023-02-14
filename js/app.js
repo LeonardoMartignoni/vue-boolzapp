@@ -166,6 +166,8 @@ createApp({
           ],
         },
       ],
+
+      activeChat: 0,
     };
   },
 }).mount("#app");
