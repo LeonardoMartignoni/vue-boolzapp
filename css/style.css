@@ -103,6 +103,7 @@ main {
 
 .chat_list .chat {
   border-top: 1px solid #e7e7e7;
+  cursor: pointer;
 }
 
 .chat_icon {
