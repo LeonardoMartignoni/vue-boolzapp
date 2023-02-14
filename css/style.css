@@ -33,17 +33,18 @@ main {
 }
 
 .profile {
-  height: 80px;
   background-color: #eaeaea;
-}
-
-.profile_img {
-  border-radius: 50px;
 }
 
 .profile_img img {
   width: 50px;
-  border-radius: inherit;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.profile_settings i {
+  font-size: 1.5rem;
+  color: #b1b1b1;
 }
 
 /* Right main side */
