@@ -32,7 +32,7 @@ main {
   width: 30%;
 }
 
-/* Profile */
+/* Profile + Profile chat */
 
 .profile {
   background-color: #eaeaea;
@@ -136,4 +136,11 @@ main {
 
 .right_main {
   width: 70%;
+}
+
+/* Chat text area */
+
+#profile_last_access {
+  color: #a1a1a1;
+  font-size: 0.8rem;
 }
