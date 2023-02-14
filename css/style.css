@@ -32,6 +32,8 @@ main {
   width: 30%;
 }
 
+/* Profile */
+
 .profile {
   background-color: #eaeaea;
 }
@@ -45,6 +47,35 @@ main {
 .profile_settings i {
   font-size: 1.5rem;
   color: #b1b1b1;
+}
+
+/* Notification */
+
+.notification {
+  background-color: #8edafc;
+}
+
+.bell_icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f2fbff;
+  border-radius: 50px;
+}
+
+.bell_icon i {
+  color: #8edafc;
+  font-size: 1.2rem;
+}
+
+.notification_text {
+  font-size: 0.9rem;
+}
+
+.notification_text .active_notification {
+  text-decoration: underline;
+  color: #5e8dab;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 
 /* Right main side */
