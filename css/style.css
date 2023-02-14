@@ -152,6 +152,7 @@ main {
 .text_chat {
   height: 100%;
   background-image: url("../img/mine.jpg");
+  overflow-y: auto;
 }
 
 .new_message {
