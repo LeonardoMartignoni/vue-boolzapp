@@ -183,6 +183,38 @@ main {
   right: 5px;
 }
 
+.message_menu {
+  cursor: pointer;
+  display: none;
+  color: #8b8b8b;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  height: 100%;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.new_message:hover .message_menu {
+  display: block;
+}
+
+.message_menu.sender_menu {
+  background-image: linear-gradient(to left, #d5f9ba 50%, transparent);
+}
+
+.message_menu.receiver_menu {
+  background-image: linear-gradient(to left, white 50%, transparent);
+}
+
+.message_menu::before {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Send Message */
 
 .send_message {
