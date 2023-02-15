@@ -170,6 +170,7 @@ createApp({
       activeChat: 0,
       newMessage: "",
       searchChat: "",
+      show: false,
     };
   },
 
@@ -195,6 +196,10 @@ createApp({
       setTimeout(() => {
         this.contacts[this.activeChat].messages.push(messageReceiver);
       }, 1000);
+    },
+
+    openDropdown() {
+      this.show = !this.show;
     },
   },
 }).mount("#app");

@@ -149,12 +149,17 @@
 					<div class="text_chat p-4 d-flex flex-column">
 
 						<!-- MESSAGES -->
-						<div class="new_message px-3 py-2 mb-2 rounded-3" v-for="message in contacts[activeChat].messages"
+						<div class="new_message px-3 py-2 mb-2 rounded-3" v-for="(message, index) in contacts[activeChat].messages"
 							:class="message.status == 'sent' ? 'sender_message' : 'receiver_message' ">
 							<p class="message_text mb-0 me-5">{{ message.text }}</p>
 							<span class="message_date">12:00</span>
 							<i class="message_menu sender_menu fa-solid fa-chevron-down"
-								:class="message.status == 'sent' ? 'sender_menu' : 'receiver_menu' "></i>
+								:class="message.status == 'sent' ? 'sender_menu' : 'receiver_menu' " @click="openDropdown()">
+							</i>
+							<div class="message_menu_dropdown" :class="show == true ? 'show' : ''">
+								<button class="p-2">Message info</button>
+								<button class="p-2">Delete message</button>
+							</div>
 						</div>
 						<!-- <div class="new_message sender_message d-flex px-3 py-2 mb-2 rounded-3">
 							<p class="mb-0 me-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis impedit

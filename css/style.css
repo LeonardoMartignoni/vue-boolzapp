@@ -217,6 +217,29 @@ main {
   justify-content: center;
 }
 
+/* Message Dropdown */
+
+/* .message_menu_dropdown.message_menu_show {
+  display: block;
+} */
+
+.message_menu_dropdown.show {
+  display: block;
+}
+
+.message_menu_dropdown {
+  display: none;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.message_menu_dropdown button {
+  display: block;
+  width: 100%;
+}
+
 /* Send Message */
 
 .send_message {
