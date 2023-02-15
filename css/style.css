@@ -229,11 +229,18 @@ main {
   position: absolute;
   right: 0;
   z-index: 1;
+  box-shadow: 0 0 5px grey;
 }
 
 .message_menu_dropdown button {
   display: block;
   width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.message_menu_dropdown button:hover {
+  background-color: #eaeaea;
 }
 
 /* Send Message */

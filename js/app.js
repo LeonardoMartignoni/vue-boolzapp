@@ -170,7 +170,7 @@ createApp({
       activeChat: 0,
       newMessage: "",
       searchChat: "",
-      show: false,
+      showDropdownIndex: 0,
     };
   },
 
@@ -199,8 +199,14 @@ createApp({
     },
 
     openDropdown(i) {
+      // this.contacts[this.activeChat].messages[
+      //   this.showDropdownIndex
+      // ].showDropdown = false;
+
       this.contacts[this.activeChat].messages[i].showDropdown =
         !this.contacts[this.activeChat].messages[i].showDropdown;
+
+      // this.showDropdownIndex = i;
     },
   },
 }).mount("#app");
