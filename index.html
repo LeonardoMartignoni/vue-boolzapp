@@ -154,9 +154,10 @@
 							<p class="message_text mb-0 me-5">{{ message.text }}</p>
 							<span class="message_date">12:00</span>
 							<i class="message_menu sender_menu fa-solid fa-chevron-down"
-								:class="message.status == 'sent' ? 'sender_menu' : 'receiver_menu' " @click="openDropdown()">
+								:class="message.status == 'sent' ? 'sender_menu' : 'receiver_menu' " @click="openDropdown(index)">
 							</i>
-							<div class="message_menu_dropdown" :class="show == true ? 'show' : ''">
+							<div class="message_menu_dropdown"
+								:class="contacts[activeChat].messages[index].showDropdown == true ? 'show' : ''">
 								<button class="p-2">Message info</button>
 								<button class="p-2">Delete message</button>
 							</div>

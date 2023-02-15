@@ -219,10 +219,6 @@ main {
 
 /* Message Dropdown */
 
-/* .message_menu_dropdown.message_menu_show {
-  display: block;
-} */
-
 .message_menu_dropdown.show {
   display: block;
 }

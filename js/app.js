@@ -198,8 +198,9 @@ createApp({
       }, 1000);
     },
 
-    openDropdown() {
-      this.show = !this.show;
+    openDropdown(i) {
+      this.contacts[this.activeChat].messages[i].showDropdown =
+        !this.contacts[this.activeChat].messages[i].showDropdown;
     },
   },
 }).mount("#app");
