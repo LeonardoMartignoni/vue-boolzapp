@@ -127,6 +127,7 @@ main {
   font-size: 0.7rem;
 }
 
+.chat_list .chat:hover,
 .chat.chat_active {
   background-color: #e9ebeb;
 }
