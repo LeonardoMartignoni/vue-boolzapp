@@ -159,7 +159,8 @@ main {
 .new_message {
   position: relative;
   font-size: 0.9rem;
-  max-width: 45%;
+  max-width: 70%;
+  width: fit-content;
 }
 
 .sender_message {
