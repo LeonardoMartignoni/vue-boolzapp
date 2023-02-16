@@ -208,5 +208,10 @@ createApp({
 
       // this.showDropdownIndex = i;
     },
+
+    removeMessage(i) {
+      // delete this.contacts[this.activeChat].messages[i];
+      this.contacts[this.activeChat].messages.splice(i, 1);
+    },
   },
 }).mount("#app");

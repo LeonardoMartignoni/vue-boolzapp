@@ -160,7 +160,7 @@
 							<div class="message_menu_dropdown"
 								:class="contacts[activeChat].messages[index].showDropdown == true ? 'show' : ''">
 								<button class="p-2">Message info</button>
-								<button class="p-2">Delete message</button>
+								<button class="p-2" @click="removeMessage(index)">Delete message</button>
 							</div>
 						</div>
 						<!-- <div class="new_message sender_message d-flex px-3 py-2 mb-2 rounded-3">
