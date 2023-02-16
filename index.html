@@ -70,14 +70,15 @@
 					<div class="search_chats p-2">
 						<div class="search_chats_content d-flex align-items-center p-1">
 							<i class="search_icon mx-3 fa-solid fa-magnifying-glass"></i>
-							<input type="text" class="search_chats_input" placeholder="Cerca o inizia una nuova chat">
+							<input type="text" class="search_chats_input" placeholder="Cerca o inizia una nuova chat"
+								v-model="searchChat" @keyup="filterChat()">
 						</div>
 					</div>
 
 					<!-- CHAT LIST -->
 					<div class="chat_list">
-						<div class="chat d-flex align-items-center px-3 py-2" v-for="(contact, index) in contacts"
-							:class="index == activeChat ? 'chat_active' : ''" @click="activeChat = index">
+						<div class="chat align-items-center px-3 py-2" v-for="(contact, index) in contacts"
+							:class="index == activeChat ? 'chat_active' : ''" @click="activeChat = index" v-show="contact.visible">
 
 							<!-- CHAT ICON -->
 							<div class="chat_icon d-flex justify-content-center align-items-center flex-shrink-0">
@@ -117,6 +118,7 @@
 							</div>
 
 						</div> -->
+
 					</div>
 
 				</div>

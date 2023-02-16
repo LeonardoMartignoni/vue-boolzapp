@@ -97,6 +97,10 @@ main {
 
 /* Chat list */
 
+.chat {
+  display: flex;
+}
+
 .chat_list {
   overflow-y: auto;
 }

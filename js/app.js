@@ -210,8 +210,23 @@ createApp({
     },
 
     removeMessage(i) {
-      // delete this.contacts[this.activeChat].messages[i];
       this.contacts[this.activeChat].messages.splice(i, 1);
+    },
+
+    filterChat() {
+      if (this.searchChat != "") {
+        this.contacts.forEach((contact) => {
+          if (contact.name.includes(this.searchChat)) {
+            contact.visible = true;
+          } else {
+            contact.visible = false;
+          }
+        });
+      } else {
+        this.contacts.forEach((contact) => {
+          contact.visible = true;
+        });
+      }
     },
   },
 }).mount("#app");
