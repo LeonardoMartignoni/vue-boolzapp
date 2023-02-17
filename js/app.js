@@ -216,7 +216,9 @@ createApp({
     filterChat() {
       if (this.searchChat != "") {
         this.contacts.forEach((contact) => {
-          if (contact.name.includes(this.searchChat)) {
+          if (
+            contact.name.toLowerCase().includes(this.searchChat.toLowerCase())
+          ) {
             contact.visible = true;
           } else {
             contact.visible = false;
